@@ -1,0 +1,118 @@
+ *{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    color:floralwhite;;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul{
+    list-style: none;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+}
+body{
+    background-image:url(/Potifólio/img/fundo-cosmico-com-luzes-laser-de-neon-coloridas-perfeito-para-um-papel-de-parede-digital_181624-23743.webp);
+    background-repeat: no-repeat;
+    background-position: center center fixed;
+    background-size: cover;
+    /*width: 10%;*/
+}
+
+header {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    padding: 10px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li{
+    padding: 10px;
+}
+/*
+.container{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px;
+    align-items: space-evenly;
+}
+*/
+
+.col1{
+    display: flex;
+    align-items: center;
+    background-color: rgb(13, 6, 18);
+    margin-top: 1cm;
+    margin-left: 5cm;
+    margin-right: 5cm;
+    padding-left: 1cm;
+    padding-right: 1cm;
+    padding-top: 1cm;
+    padding-bottom: 1cm;
+} 
+.foto{
+    display: flex;
+    width: 150px;
+    border-radius: 10px;
+    justify-content: center;
+    margin-left: 1cm;
+}
+
+#sobre p {
+    font-size: larger;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    color: floralwhite;
+}
+.nome h1 {
+    display: flex;
+    justify-content:center;
+    font-size: 40px;
+    margin-left: 10px;
+    margin-top: 1cm;
+}
+
+.nome h5 {
+    display: flex;
+    justify-content:center;
+    font-size: 25px;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    padding-block-end: 200px;
+}
+.form input {
+    width: 50%;
+}
+
+.form button {
+    width: 15%;
+}
+
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 1cm;
+    padding: 1cm;
+}
+
+.redes-sociais li{
+    display: inline; /* Faz com que os itens se comportem como elementos inline */
+    margin-right: 10px;/* Adiciona um espaço entre os itens*/
+
+
+}
