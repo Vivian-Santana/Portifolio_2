@@ -1,3 +1,4 @@
+/*estilização do conteúdo geral e do background*/
  *{
     padding: 0%;
     margin: 0%;
@@ -6,24 +7,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
-ul{
-    list-style: none;
-    font-size: 20px;
-    font-style: italic;
-    font-weight: 700;
-}
-
-a{
-    text-decoration: none;
-}
 body{
-    background-image:url(/Potifólio/img/fundo-cosmico-com-luzes-laser-de-neon-coloridas-perfeito-para-um-papel-de-parede-digital_181624-23743.webp);
-    background-repeat: no-repeat;
-    background-position: center center fixed;
+    background-image:url(/img/fundo-cosmico-com-luzes-laser-de-neon-coloridas-perfeito-para-um-papel-de-parede-digital_181624-23743.webp);
     background-size: cover;
-    /*width: 10%;*/
+    background-repeat: no-repeat;
+    background-attachment: fixed; /*fixa a imagem de fundo*/
 }
+/*estilização do conteúdo geral e do background*/
 
+/* estilização do header*/
 header {
     display: flex;
     justify-content: space-around; 
@@ -38,43 +30,7 @@ header ul {
 header ul li{
     padding: 10px;
 }
-/*
-.container{
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    padding: 10px;
-    align-items: space-evenly;
-}
-*/
 
-.col1{
-    display: flex;
-    align-items: center;
-    background-color: rgb(13, 6, 18);
-    margin-top: 1cm;
-    margin-left: 5cm;
-    margin-right: 5cm;
-    padding-left: 1cm;
-    padding-right: 1cm;
-    padding-top: 1cm;
-    padding-bottom: 1cm;
-} 
-.foto{
-    display: flex;
-    width: 150px;
-    border-radius: 10px;
-    justify-content: center;
-    margin-left: 1cm;
-}
-
-#sobre p {
-    font-size: larger;
-    justify-content: center;
-    max-width: 600px;
-    margin: 0 auto;
-    color: floralwhite;
-}
 .nome h1 {
     display: flex;
     justify-content:center;
@@ -89,6 +45,99 @@ header ul li{
     font-size: 25px;
 }
 
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    /*margin-top: 1cm;*/
+    padding: 0.5cm;
+}
+
+nav ul{
+    list-style: none;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+    /*colocar um houver para quando passar o mouse*/
+}
+
+nav a{
+    text-decoration: none;
+}
+nav li{
+    display: inline; /* Faz com que os itens se comportem como elementos inline */
+    margin-right: 100px;/* Adiciona um espaço entre os itens*/
+    list-style: none; /* Remove os marcadores de lista */
+}
+/* estilização do header*/
+
+/*
+.container{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px;
+    align-items: space-evenly;
+}
+*/
+
+/*estilização do conteúdo da main*/
+
+.welcome{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(13, 6, 18);
+    border-radius: 10px;
+    margin-top: 1cm;
+    margin-left: 9cm;
+    margin-right: 9cm;
+    padding-left: 1cm;
+    padding-right: 1cm;
+    padding-top: 1cm;
+    padding-bottom: 1cm;
+}
+.foto{
+    width: 150px;
+    border-radius: 10px;
+    margin-left: 0.5cm;
+}
+
+.welcome p {
+    font-size: larger;
+    max-width: 600px;
+    margin: 0.5cm;
+    padding-left: 1cm;
+    padding-right: 1cm;
+    color: floralwhite;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(13, 6, 18);
+    border-radius: 10px;
+    margin-top: 1cm;
+    padding-left: 1cm;
+    padding-right: 1cm;
+    padding-top: 1cm;
+    padding-bottom: 1cm;
+}
+
+section h2{
+    display: flex;
+    justify-content: center;
+}
+
+section p{
+
+    padding-top: 1cm;
+    padding-left: 3cm;
+    padding-right: 3cm;
+}
+/*estilização do conteúdo da main*/
+
+/*estilização do formulario*/
 .form {
     width: 40%;
     margin: 0 auto;
@@ -101,7 +150,9 @@ header ul li{
 .form button {
     width: 15%;
 }
+/*estilização do formulario*/
 
+/*estilização do footer*/
 .footer{
     background-color: black;
     display: flex;
@@ -110,9 +161,19 @@ header ul li{
     padding: 1cm;
 }
 
+ul{
+    list-style: none;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+}
 .redes-sociais li{
     display: inline; /* Faz com que os itens se comportem como elementos inline */
     margin-right: 10px;/* Adiciona um espaço entre os itens*/
-
-
+    list-style: none; /* Remove os marcadores de lista */
 }
+/*estilização do footer*/
