@@ -7,7 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     background-image:url(/img/fundo-cosmico-com-luzes-laser-de-neon-coloridas-perfeito-para-um-papel-de-parede-digital_181624-23743.webp);
     background-size: cover;
     background-repeat: no-repeat;
@@ -44,8 +44,8 @@ header ul li{
     justify-content:center;
     font-size: 25px;
 }
-
-nav{
+/*nav-bar*/
+nav {
     background-color: black;
     display: flex;
     justify-content: center;
@@ -53,7 +53,7 @@ nav{
     padding: 0.5cm;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     font-size: 20px;
     font-style: italic;
@@ -64,7 +64,7 @@ nav ul{
 nav a{
     text-decoration: none;
 }
-nav li{
+nav li {
     display: inline; /* Faz com que os itens se comportem como elementos inline */
     margin-right: 100px;/* Adiciona um espaço entre os itens*/
     list-style: none; /* Remove os marcadores de lista */
@@ -83,7 +83,7 @@ nav li{
 
 /*estilização do conteúdo da main*/
 
-.welcome{
+.welcome {
     display: flex;
     justify-content: center;
     background-color: rgb(13, 6, 18);
@@ -96,7 +96,7 @@ nav li{
     padding-top: 1cm;
     padding-bottom: 1cm;
 }
-.foto{
+.foto {
     width: 150px;
     border-radius: 10px;
     margin-left: 0.5cm;
@@ -111,7 +111,7 @@ nav li{
     color: floralwhite;
 }
 
-section{
+section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,13 +124,67 @@ section{
     padding-bottom: 1cm;
 }
 
-section h2{
+.titulo-section {
     display: flex;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;  
 }
 
-section p{
+.titulo-section h2 {
+    margin-bottom: 0px;
+}
 
+.lista-skils {
+    display: flex;
+    justify-content: center;
+    /*flex-wrap: wrap;*/
+    list-style: none;
+    width: 50%; /* Isso fará com que duas li fiquem lado a lado */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.lista-skils li {
+    display: inline;
+    justify-content: space-around;
+    list-style: none;
+    padding-bottom: 1cm;
+    padding-top: 1cm;
+    padding-left: 1cm;
+    padding-right: 1cm;
+    margin-right: 15px;
+}
+/*
+a {
+    display: inline;
+    justify-content: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 15px;
+    margin-top: 1cm;
+}*/
+
+#certificados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+a {
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+   /* padding: 5px; espaçamento entre as linhas*/
+    margin-top: 1cm;
+}
+
+
+/*ajuste e alinhamento dos parágrafos*/
+section p {
+    padding-bottom: 1cm;
     padding-top: 1cm;
     padding-left: 3cm;
     padding-right: 3cm;
@@ -138,17 +192,35 @@ section p{
 /*estilização do conteúdo da main*/
 
 /*estilização do formulario*/
-.form {
-    width: 40%;
-    margin: 0 auto;
-    padding-block-end: 200px;
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 5cm;
+    
 }
+
+.form h2{
+    text-align: center;
+}
+
 .form input {
-    width: 50%;
+    align-items: center;
+    width: 100%; /* Certifique-se de que o campo de entrada ocupe toda a largura disponível. */
+    padding: 10px;
+    margin: 10px; /* Adicione algum espaçamento superior e inferior para o campo de entrada. */
+    margin-top: 20px;
+    width: 10cm;
 }
 
 .form button {
-    width: 15%;
+    background-color: blueviolet;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
 }
 /*estilização do formulario*/
 
