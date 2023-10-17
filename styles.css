@@ -4,7 +4,7 @@
     margin: 0%;
     box-sizing: border-box;
     color:floralwhite;;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -44,13 +44,19 @@ header ul li{
     justify-content:center;
     font-size: 25px;
 }
-/*nav-bar*/
+
+/* nav-bar */
 nav {
     background-color: black;
     display: flex;
     justify-content: center;
-    /*margin-top: 1cm;*/
     padding: 0.5cm;
+
+    max-width: 1600px;
+    margin-bottom: 50px;
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 1cm;
 }
 
 nav ul {
@@ -58,20 +64,22 @@ nav ul {
     font-size: 20px;
     font-style: italic;
     font-weight: 700;
-    /*colocar um houver para quando passar o mouse*/
 }
 
-nav a{
-    text-decoration: none;
+
+
+.list-items li a:hover{
+    text-decoration: underline;
+    color: blueviolet;
 }
-nav li {
+
+nav li{
     display: inline; /* Faz com que os itens se comportem como elementos inline */
     margin-right: 100px;/* Adiciona um espaço entre os itens*/
     list-style: none; /* Remove os marcadores de lista */
 }
 /* estilização do header*/
 
-/*
 .container{
     display: flex;
     justify-content: space-between; 
@@ -79,7 +87,7 @@ nav li {
     padding: 10px;
     align-items: space-evenly;
 }
-*/
+
 
 /*estilização do conteúdo da main*/
 
@@ -216,7 +224,7 @@ section p {
 }
 
 .form button {
-    background-color: blueviolet;
+    background-color: rgb(30, 9, 49);
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -227,10 +235,9 @@ section p {
 /*estilização do footer*/
 .footer{
     background-color: black;
-    display: flex;
+    display: grid;
     justify-content: center;
     margin-top: 1cm;
-    padding: 1cm;
 }
 
 ul{
@@ -243,9 +250,34 @@ ul{
 a{
     text-decoration: none;
 }
-.redes-sociais li{
+.redes-sociais li {
     display: inline; /* Faz com que os itens se comportem como elementos inline */
-    margin-right: 10px;/* Adiciona um espaço entre os itens*/
+    justify-content: center;
+    justify-content: space-around;/* Adiciona um espaço entre os ícones*/
     list-style: none; /* Remove os marcadores de lista */
+}
+
+
+.autor {
+    display: inline;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.redes-sociais {
+    padding-left: 40px; /*alinha os ícones com o parágrafo abaixo*/
+}
+.autor span{
+    display: inline-flex;
+    justify-content: center; 
+    padding-left: 80px;
+}
+
+.autor p{
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+.redes-sociais li{ /*colocar efeito nos icones quando passar o mouse*/
 }
 /*estilização do footer*/
