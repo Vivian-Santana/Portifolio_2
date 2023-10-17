@@ -4,25 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-        href="https: //fonts.googleapis.com/css2? family= Open+Sans:wght@300;400;600;700 & display=swap"
-        rel="stylesheet"
-    />
-    <script src="https://kit.fontawesome.com/8c5ae72dda.js" crossorigin="anonymous"></script>   
-    <link rel="stylesheet" href="/styles.css">
+    <link href="https: //fonts.googleapis.com/css2? family= Open+Sans:wght@300;400;600;700 & display=swap"
+        rel="stylesheet"/> <!--link da fonte usada do google fonts-->
+    <script src="https://kit.fontawesome.com/8c5ae72dda.js" crossorigin="anonymous"></script> <!--link dos ícones usados-->
+    <link rel="stylesheet" href="/styles.css"> <!--link da folha de estilo css desta página-->
     <title>Vivian Santana</title>
 </head>
+
 <body>
+    <!--Itens do Menu com links para cada área da página-->
     <nav>
-        <ul class="list-items">
-            <li><a href="#Sobre">Sobre</a></li>
-            <li><a href="#Formacao">Formação</a></li>
-            <li><a href="#Certificados">Certificados</a></li>
-            <li><a href="#Skils">Skils</a></li>
-            <li><a href="#Contato">Entre em contato</a></li>
+        <ul class="menu" id="menu">
+            <li><a href="#sobre">Sobre mim</a></li>
+            <li><a href="#formacao">Formação</a></li>
+            <li><a href="#certificados">Certificados</a></li>
+            <li><a href="#skils">Skils</a></li>
+            <li><a href="#contato">Entre em contato</a></li>
         </ul>
     </nav>
-        
+    
+    <!--Nome e breve apresentação-->
     <header>
         <div class="nome">
             <h1>Vivian Santana</h1>
@@ -31,52 +32,71 @@
     </header>
 
     <main>
-
             <div class="welcome">
                 <img class="foto" src="img/IMG_20200901_220754230.jpg" alt="foto de Vivian">
                 
                 <p>
-                    Olá! Bem vindo(a)! Aqui você vai conhecer um pouco sobre mim e sobre a minha caminhada na área de desenvolvimento, 
-                    fique à vontade para entrar em contato pelas minhas redes sociais ou por meio do formulário. <!--colocar link para o form-->
+                    Olá! Boas vindas! Aqui você vai conhecer um pouco sobre mim e sobre a minha caminhada na área de desenvolvimento, 
+                    fique à vontade para entrar em contato pelas minhas redes sociais ou por meio do <a href="#contato">formulário</a>. <!--colocar link para o form-->
                 </p>
 
             </div>
-
-        <section class="titulo-section" id="Sobre">
-            <h2>Sobre</h2>
+        
+        <!--Primeira seção com mais informações sobre mim-->
+        <section class="titulo-section" id="sobre">
+            <h2>Sobre mim</h2>
             <p>
                 Sou paulistana, moro na região do ABC, meus hobbies são desenhar, ler e assistir filmes, séries ou documentários. Gosto de aprender coisas novas, sempre gostei de idiomas, estudo inglês autodidata desde criança e atualmente faço um curso, sei espanhol em nível básico. tenho formação técnica em costura e modelagem do vestuário atuei na área um bom tempo. A área de TI, especificamente desenvolvimento sempre me atraiu e no fim do ensino médio era uma das minhas opções, devido esse antigo interesse e a crescente necessidade de profissionais no mercado decidi aprender a programar e encarar o desafio de migrar de carreira. Tive o meu primeiro contato com programação num bootcamp onde aprendi lógica de programação web com java, sql, typeScrip e angular pude desenvolver um site em grupo usando ferramentas de colaboração e controle de versão, trello, Git e GitHub. Em seguida continuei o meu aprendizado com outros cursos livres e com conteúdo gratuito na internet, nesse meio tempo fiz estágio voluntário numa ong chamada Cactos que prepara alunos de escolas públicas para olimpíadas escolares, atuei na área de dados, lidava com análise e manipulação de dados no Excel, levantava informações em dashboards e relatórios para serem apresentados em reuniões semanais. Atualmente curso Análise e Desenvolvimento de Sistemas.
             </p>
         </section>
 
-        <section class="titulo-section" id="Formacao">
+        <!--Segunda seção com informações sobre minha formação-->
+        <section class="titulo-section" id="formacao">
             <h2>
                 Formação
             </h2>
             <p>
                 Graduanda em Análise e Desenvolvimento de Sistemas pelo Centro Universitário Internacional (UNINTER)
             </p>
+
+            <h3 class="idiomas">Idiomas</h3>
+            <p>Inglês intermediário</p>
+            <p>espanhol básico</p>
         </section>
 
-        <section class="titulo-section" id="Skils">
+        <!--Terceira seção com iformações sobre habilidades técnicas-->
+        <section class="titulo-section" id="skils">
             <h2>
                 Skils
             </h2>
 
-            <ul class="lista-skils"><!--colocar os ícones das linguagens e frame works-->
-                <li>java</li> <i class="fa-brands fa-java fa-2x"></i>
-                <li>javaScript </li> <i class="fa-brands fa-square-js fa-2x"></i>
-                <li>Python</li> <i class="fa-brands fa-python fa-2x"></i>
-                <li>Sql</li> <i class="fa-solid fa-database fa-2x"></i>
-                <li>Sprig Boot</li> 
-                <li>angular</li> <i class="fa-brands fa-angular fa-2x"></i>
-                <li>Git/GitHub</li> <i class="fa-brands fa-github fa-2x"></i>
-                <li>figma</li> <i class="fa-brands fa-figma fa-2x"></i> <!--prototipação de design de interface-->
+            <ul class="skils-list"><!--colocar os ícones das linguagens e frame works-->
+                <li>java</li> 
+                <li>javaScript </li> 
+                <li>Python</li> 
+                <li>Sql</li> 
+                <li>HTML</li> 
+                <li>CSS</li> 
+                <li>Git/GitHub</li> 
+                <li>figma</li>  <!--prototipação de design de interface-->
             </ul>
+
+            <div id="icons">
+                <i id="icons" class="fa-brands fa-java fa-4x"></i>
+                <i id="icons" class="fa-brands fa-square-js fa-4x"></i>
+                <i id="icons" class="fa-brands fa-python fa-4x"></i>
+                <i id="icons"class="fa-solid fa-database fa-4x"></i>
+                <!--<img id="icons" src="/img/ícone-spring-framework.png" width= 120px height= 60px alt="Descrição da imagem"> -->
+                <i id="icons" class="fa-brands fa-html5 fa-4x"></i>
+                <i id="icons" class="fa-brands fa-css3-alt fa-4x"></i>
+                <i id="icons" class="fa-brands fa-github fa-4x"></i>
+                <i id="icons" class="fa-brands fa-figma fa-4x"></i>
+            </div>
 
         </section>
 
-        <section class="titulo-section" id="Certificados">
+        <!--Quarta seção com certificados de cursos livres-->
+        <section class="titulo-section" id="certificados">
             <h2>
                 Certificados
             </h2>
@@ -90,20 +110,27 @@
 
             <a href="https://drive.google.com/file/d/1Y3ZrVpacymOKMdDeUwIIV9XF-C9DLBgn/view?usp=drive_link">Front-end</a>
 
-            <a href="https://drive.google.com/file/d/1Z0q2BJVRppnO1wtsCJWJ25eGmbKYlGzW/view">Voluntariado na ong Cactus</a>
+            <a href="https://drive.google.com/file/d/1Z0q2BJVRppnO1wtsCJWJ25eGmbKYlGzW/view">Voluntariado na ONG Cactus</a>
         </section>
 
-        <section class="form" id="Contato">
+        <!--Quinta seção formulário-->
+        <section class="titulo-section" id="contato">
                 <h2>Entre em contato</h2>
 
-                <form action="">
-                    <input type="text" placeholder="e-mail">
-                    <button>enviar</button>
+                <form class="form" action="">
+                    <input type="text" placeholder="Nome" id="nome-contato">
+                    <input type="email" placeholder="e-mail">
+                    <input type="text" placeholder="Assunto">
+                    <button>Enviar</button>
                 </form>
+
+                <a href="#menu">Voltar para cima</a> <!--link para voltar para o menu-->
+                <i class="fa-solid fa-arrow-up"></i>
         </section>
 
         </div>
 
+        <!--rodapé da página com ícones lincados as minhas redes sociais-->
         <div class="footer">
             <ul class="redes-sociais">
                 <li>
@@ -112,7 +139,7 @@
     
                     <a class="fa-brands fa-linkedin fa-2x" target="_blank" href="https://www.linkedin.com/in/vivian-s-5723841a3"></a>
                 <li>
-                    <a class="fa-solid fa-envelope fa-2x" target="_blank" href="mailto:santanavivian245@gmail.com"></a>
+                    <a class="fa-brands fa-square-whatsapp fa-2x" target="_blank" href="https://wa.me/"></a>
                 </li>
             </ul>
 
@@ -124,7 +151,5 @@
         </div>
 
     </main>
-
-
 </body>
 </html>

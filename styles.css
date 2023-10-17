@@ -68,9 +68,9 @@ nav ul {
 
 
 
-.list-items li a:hover{
+.menu li a:hover{
     text-decoration: underline;
-    color: blueviolet;
+    color: rgb(88, 21, 150);
 }
 
 nav li{
@@ -118,6 +118,10 @@ nav li{
     padding-right: 1cm;
     color: floralwhite;
 }
+.welcome p a:hover {
+    text-decoration: underline;
+    color: rgb(88, 21, 150);
+}
 
 section {
     display: flex;
@@ -144,7 +148,12 @@ section {
     margin-bottom: 0px;
 }
 
-.lista-skils {
+.idiomas p{
+    display: inline;
+    margin-bottom: 10px;
+}
+
+.skils-list {
     display: flex;
     justify-content: center;
     /*flex-wrap: wrap;*/
@@ -154,7 +163,7 @@ section {
     box-sizing: border-box;
 }
 
-.lista-skils li {
+.skils-list li {
     display: inline;
     justify-content: space-around;
     list-style: none;
@@ -164,6 +173,12 @@ section {
     padding-right: 1cm;
     margin-right: 15px;
 }
+#icons i {
+    margin-left: 1cm; /* Espaçamento horizontal entre os ícones */
+    padding-right: 55px;
+    margin-bottom: 20px;
+}
+
 /*
 a {
     display: inline;
@@ -197,11 +212,16 @@ section p {
     padding-left: 3cm;
     padding-right: 3cm;
 }
+
+#Certificados a:hover{
+    text-decoration: underline;
+    color: rgb(88, 21, 150);
+}
 /*estilização do conteúdo da main*/
 
 /*estilização do formulario*/
 
-.form{
+.form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -229,6 +249,13 @@ section p {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
+}
+
+.form button:hover {
+    transform: translateY(-5px); /* o botão vai saltar 5px para cima quando o cursosr passar por ele*/
+    transition: color 0.3s;
+    color: rgb(122, 15, 223);
 }
 /*estilização do formulario*/
 
@@ -271,6 +298,7 @@ a{
     display: inline-flex;
     justify-content: center; 
     padding-left: 80px;
+    margin-bottom: 20px;
 }
 
 .autor p{
@@ -278,6 +306,8 @@ a{
     justify-content: center;
     margin-left: 10px;
 }
-.redes-sociais li{ /*colocar efeito nos icones quando passar o mouse*/
+.redes-sociais a:hover{ /*colocar efeito nos icones quando passar o mouse*/
+    transition: color 0.3s;
+    color: rgb(88, 21, 150);
 }
 /*estilização do footer*/
