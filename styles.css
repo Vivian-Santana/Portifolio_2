@@ -220,6 +220,9 @@ section p {
 /*estilização do conteúdo da main*/
 
 /*estilização do formulario*/
+#contato {
+    display: grid; 
+}
 
 .form {
     display: flex;
@@ -227,21 +230,42 @@ section p {
     justify-content: center;
     align-items: center;
     height: 5cm;
-    
+    margin-top: 1cm;
 }
 
 .form h2{
     text-align: center;
 }
 
-.form input {
+/*.form input {
     align-items: center;
-    width: 100%; /* Certifique-se de que o campo de entrada ocupe toda a largura disponível. */
+    width: 100%;  Certifique-se de que o campo de entrada ocupe toda a largura disponível. */
     padding: 10px;
-    margin: 10px; /* Adicione algum espaçamento superior e inferior para o campo de entrada. */
+    margin: 10px; /* Adicione algum espaçamento superior e inferior para o campo de entrada. 
     margin-top: 20px;
     width: 10cm;
+}*/
+
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+   /* align-items: center;
+    padding: 30px;
+    margin: 30px;  Adicione algum espaçamento superior e inferior para o campo de entrada. 
+    margin-top: 20px;*/
 }
+
+.form input {
+    width: 380px;
+    height: 30px;
+  }
+  
+  #assunto {
+    height: 90px;
+  }
 
 .form button {
     background-color: rgb(30, 9, 49);
@@ -250,12 +274,31 @@ section p {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 .form button:hover {
     transform: translateY(-5px); /* o botão vai saltar 5px para cima quando o cursosr passar por ele*/
     transition: color 0.3s;
     color: rgb(122, 15, 223);
+}
+
+.voltar {
+    display: grid;
+    display: inline;
+    justify-content: left;
+    padding-inline-end: 32cm;
+    padding-top: 30px;
+}
+
+.voltar a:hover {
+    transition: color 0.3s;
+    color: rgb(88, 21, 150);
+}
+
+.voltar i:hover {
+    transition: color 0.3s;
+    color: rgb(88, 21, 150);
 }
 /*estilização do formulario*/
 
