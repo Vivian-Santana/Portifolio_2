@@ -220,42 +220,32 @@ section p {
 /*estilização do conteúdo da main*/
 
 /*estilização do formulario*/
-#contato {
-    display: grid; 
-}
-
 .form {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /*flex-direction: column;*/
     align-items: center;
-    height: 5cm;
     margin-top: 1cm;
 }
 
-.form h2{
-    text-align: center;
+.container{
+    display: inline;
+    justify-content: baseline;
 }
 
-/*.form input {
-    align-items: center;
-    width: 100%;  Certifique-se de que o campo de entrada ocupe toda a largura disponível. */
-    padding: 10px;
-    margin: 10px; /* Adicione algum espaçamento superior e inferior para o campo de entrada. 
-    margin-top: 20px;
-    width: 10cm;
-}*/
+.div1{
+    padding-left: 6cm;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
 
+.div1 input{
+    margin-bottom: 17px
+}
 
-#contato {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-
-   /* align-items: center;
-    padding: 30px;
-    margin: 30px;  Adicione algum espaçamento superior e inferior para o campo de entrada. 
-    margin-top: 20px;*/
+.div2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-right: 7.5cm;
 }
 
 .form input {
@@ -268,6 +258,7 @@ section p {
   }
 
 .form button {
+    display: flex;
     background-color: rgb(30, 9, 49);
     color: #fff;
     padding: 10px 20px;
@@ -275,6 +266,11 @@ section p {
     cursor: pointer;
     border-radius: 5px;
     margin-top: 10px;
+    align-self:flex-start;
+    margin-left: 190px;
+    /*align-self:baseline;*/
+    /*margin-right: 2cm;*/
+    
 }
 
 .form button:hover {
