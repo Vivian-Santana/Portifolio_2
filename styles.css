@@ -31,7 +31,7 @@ header ul li{
     padding: 10px;
 }
 
-.nome h1 {
+.container-cabecalho h1 {
     display: flex;
     justify-content:center;
     font-size: 40px;
@@ -39,7 +39,7 @@ header ul li{
     margin-top: 1cm;
 }
 
-.nome h5 {
+.container-cabecalho h5 {
     display: flex;
     justify-content:center;
     font-size: 25px;
@@ -66,9 +66,7 @@ nav ul {
     font-weight: 700;
 }
 
-
-
-.menu li a:hover{
+.container-menu li a:hover{
     text-decoration: underline;
     color: rgb(88, 21, 150);
 }
@@ -99,11 +97,12 @@ nav li{
     margin-top: 1cm;
     margin-left: 9cm;
     margin-right: 9cm;
-    padding-left: 1cm;
-    padding-right: 1cm;
+    padding-left: 0.5cm;
     padding-top: 1cm;
     padding-bottom: 1cm;
+    text-align:justify;
 }
+
 .foto {
     width: 150px;
     border-radius: 10px;
@@ -123,28 +122,23 @@ nav li{
     color: rgb(88, 21, 150);
 }
 
+/*estilização das seções*/
 section {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgb(13, 6, 18);
     border-radius: 10px;
-    margin-top: 1cm;
+    margin-top: 2cm;
     padding-left: 1cm;
     padding-right: 1cm;
     padding-top: 1cm;
     padding-bottom: 1cm;
-}
-
-.titulo-section {
-    display: flex;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;  
 }
 
-.titulo-section h2 {
+section h2 {
     margin-bottom: 0px;
 }
 
@@ -179,18 +173,6 @@ section {
     margin-bottom: 20px;
 }
 
-/*
-a {
-    display: inline;
-    justify-content: center;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-right: 15px;
-    margin-top: 1cm;
-}*/
-
 #certificados {
     display: flex;
     flex-wrap: wrap;
@@ -217,63 +199,55 @@ section p {
     text-decoration: underline;
     color: rgb(88, 21, 150);
 }
+
+#portifolio {
+   
+}
 /*estilização do conteúdo da main*/
 
 /*estilização do formulario*/
-.form {
+.container-flex {
     display: flex;
-    /*flex-direction: column;*/
-    align-items: center;
-    margin-top: 1cm;
+    flex-flow: row wrap ;
+    justify-content: center;
+    padding-top: 1cm;
 }
 
-.container{
-    display: inline;
-    justify-content: baseline;
+/*inputs nome e email*/
+.input-group {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    padding-right: 20px;
 }
 
-.div1{
-    padding-left: 6cm;
-    padding-top: 70px;
-    padding-bottom: 70px;
+.input-group input {
+    width: 380px; 
+    height: 45px;
 }
 
-.div1 input{
-    margin-bottom: 17px
+/*inputs assunto*/
+#assunto {
+    width: 500px;
+    height: 110px;
 }
-
-.div2{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding-right: 7.5cm;
-}
-
-.form input {
-    width: 380px;
-    height: 30px;
-  }
-  
-  #assunto {
-    height: 90px;
-  }
 
 .form button {
-    display: flex;
+    width: 380px;
+}
+
+form button {
+    justify-content: center;
     background-color: rgb(30, 9, 49);
     color: #fff;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    margin-top: 10px;
-    align-self:flex-start;
-    margin-left: 190px;
-    /*align-self:baseline;*/
-    /*margin-right: 2cm;*/
-    
+    margin-top: 20px; 
 }
 
-.form button:hover {
+form button:hover {
     transform: translateY(-5px); /* o botão vai saltar 5px para cima quando o cursosr passar por ele*/
     transition: color 0.3s;
     color: rgb(122, 15, 223);
@@ -313,7 +287,7 @@ ul{
     font-weight: 700;
 }
 
-a{
+li {
     text-decoration: none;
 }
 .redes-sociais li {

@@ -13,37 +13,39 @@
 
 <body>
     <!--Itens do Menu com links para cada área da página-->
-    <nav>
-        <ul class="menu" id="menu">
+    <nav class="container-menu"id="menu">
+        <ul>
             <li><a href="#sobre">Sobre mim</a></li>
             <li><a href="#formacao">Formação</a></li>
             <li><a href="#certificados">Certificados</a></li>
             <li><a href="#skils">Skils</a></li>
+            <li><a href="#portifolio">Portifólio</a></li>
             <li><a href="#contato">Entre em contato</a></li>
         </ul>
     </nav>
     
     <!--Nome e breve apresentação-->
-    <header>
-        <div class="nome">
+    <header class="container-cabecalho">
+        <div>
             <h1>Vivian Santana</h1>
             <h5>Web developer</h5>
         </div>
     </header>
 
     <main>
-            <div class="welcome">
-                <img class="foto" src="img/IMG_20200901_220754230.jpg" alt="foto de Vivian">
-                
-                <p>
-                    Olá! Boas vindas! Aqui você vai conhecer um pouco sobre mim e sobre a minha caminhada na área de desenvolvimento, 
-                    fique à vontade para entrar em contato pelas minhas redes sociais ou por meio do <a href="#contato">formulário</a>. <!--colocar link para o form-->
-                </p>
 
-            </div>
+        <div class="welcome">
+            <img class="foto" src="img/IMG_20200901_220754230.jpg" alt="foto de Vivian">
+                
+            <p>
+                Olá! Boas vindas! Aqui você vai conhecer um pouco sobre mim e sobre a minha caminhada na área de desenvolvimento, 
+                 fique à vontade para entrar em contato pelas minhas redes sociais ou por meio do <a href="#contato">formulário</a>.
+            </p>
+
+        </div>
         
-        <!--Primeira seção com mais informações sobre mim-->
-        <section class="titulo-section" id="sobre">
+        <!--seção 1 com mais informações sobre mim-->
+        <section id="sobre">
             <h2>Sobre mim</h2>
             <p>
                 Sou paulistana, moro na região do ABC, meus hobbies são desenhar, ler e assistir filmes, séries ou documentários. Gosto de aprender coisas novas, sempre gostei de idiomas, estudo inglês autodidata desde criança e atualmente faço um curso, sei espanhol em nível básico. tenho formação técnica em costura e modelagem do vestuário atuei na área um bom tempo. A área de TI, especificamente desenvolvimento sempre me atraiu e no fim do ensino médio era uma das minhas opções, devido esse antigo interesse e a crescente necessidade de profissionais no mercado decidi aprender a programar e encarar o desafio de migrar de carreira. Tive o meu primeiro contato com programação num bootcamp onde aprendi lógica de programação web com java, sql, typeScrip e angular pude desenvolver um site em grupo usando ferramentas de colaboração e controle de versão, trello, Git e GitHub. Em seguida continuei o meu aprendizado com outros cursos livres e com conteúdo gratuito na internet, nesse meio tempo fiz estágio voluntário numa ong chamada Cactos que prepara alunos de escolas públicas para olimpíadas escolares, atuei na área de dados, lidava com análise e manipulação de dados no Excel, levantava informações em dashboards e relatórios para serem apresentados em reuniões semanais. Atualmente curso Análise e Desenvolvimento de Sistemas.
@@ -56,8 +58,8 @@
             </div>
         </section>
 
-        <!--Segunda seção com informações sobre minha formação-->
-        <section class="titulo-section" id="formacao">
+        <!--seção 2 com informações sobre minha formação-->
+        <section id="formacao">
             <h2>
                 Formação
             </h2>
@@ -77,7 +79,7 @@
         </section>
 
         <!--Terceira seção com iformações sobre habilidades técnicas-->
-        <section class="titulo-section" id="skils">
+        <section id="skils">
             <h2>
                 Skils
             </h2>
@@ -113,8 +115,8 @@
 
         </section>
 
-        <!--Quarta seção com certificados de cursos livres-->
-        <section class="titulo-section" id="certificados">
+        <!--seção 4 com certificados de cursos livres-->
+        <section id="certificados">
             <h2>
                 Certificados
             </h2>
@@ -137,26 +139,38 @@
             </div>
         </section>
 
-        <!--Quinta seção formulário-->
+        <!--seção 5 plink para portifólio-->
+        <section id="portifolio">
+            <h2>Portifólio</h2>
+            <p>Visite o meu perfil no GitHub</p>
+                <a class= "fa-brands fa-square-github fa-4x" target="_blank" href="https://github.com/Vivian-Santana"></a>
+            <!--   link para voltar para o menu-->
+            <div class="voltar">
+                <i class="fa-solid fa-arrow-up"></i>
+                <a href="#menu">Voltar para cima</a>
+            </div>         
+        </section>
+
+        <!--seção 6 seção formulário-->
   
-        <section class="titulo-section" id="contato">
+        <section id="contato">
                 <h2>Entre em contato</h2>
 
-            <div class="container">
-                <form class="form" action="">
-                    <div class="div1">
-                        <input type="text" size="50" style="width: 380px; height: 45px;"  placeholder="Nome" id="nome-contato">
-                        <input type="email" size="50" style="width: 380px; height: 45px;" placeholder="e-mail"> 
-                        <button>Enviar</button>
-                    </div>
-
-                    <div class="div2">
-                        <input id="assunto" size="50" type="text" size="50" style="width: 500px; height: 180px;"placeholder="Assunto">
+            <form action="">
+                <div class="container-flex">
+                    <div class="input-group">
+                        <input type="text" size="50" placeholder="Nome" id="nome-contato">
+                        <input type="email" size="50" placeholder="e-mail"> 
                         
                     </div>
-                    
-                </form>
-            </div>
+                        <input id="assunto" size="50" type="text" size="50" placeholder="Assunto">
+                </div>
+                <div>
+                    <button>Enviar</button>
+                </div>
+                
+            </form>
+
             <!--   link para voltar para o menu-->
                 <div class="voltar">
                     <i class="fa-solid fa-arrow-up"></i>
