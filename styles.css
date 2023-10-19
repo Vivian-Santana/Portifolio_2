@@ -42,7 +42,7 @@ header ul li{
     justify-content:center;
     font-size: 40px;
     margin-left: 10px;
-    margin-top: 1cm;
+    margin-top: 30px;
 }
 
 .container-cabecalho h5 {
@@ -56,20 +56,18 @@ nav {
     background-color: black;
     display: flex;
     justify-content: center;
-    padding: 0.5cm;
-
-    max-width: 1600px;
+    padding: 18px;
     margin-bottom: 50px;
     width: 100%;
     min-width: 320px;
-    padding-bottom: 1cm;
+    padding-bottom: 37px;
 }
 
 nav ul {
     list-style: none;
     font-size: 20px;
     font-style: italic;
-    font-weight: 700;
+    font-weight: 700; /* Define o peso (gramatura) da fonte*/
 }
 
 nav li{
@@ -94,27 +92,27 @@ nav li{
     justify-content: center;
     background-color: rgb(13, 6, 18);
     border-radius: 10px;
-    margin-top: 1cm;
-    margin-left: 9cm;
-    margin-right: 9cm;
-    padding-left: 0.5cm;
-    padding-top: 1cm;
-    padding-bottom: 1cm;
+    margin-top: 37px;
+    margin-left: 333px;
+    margin-right: 333px;
+    padding-left: 18px;
+    padding-top: 37px;
+    padding-bottom: 37px;
     text-align:justify;
 }
 
 .foto {
     width: 150px;
     border-radius: 10px;
-    margin-left: 0.5cm;
+    margin-left: 18px;
 }
 
 .welcome p {
     font-size: larger;
     max-width: 600px;
-    margin: 0.5cm;
-    padding-left: 1cm;
-    padding-right: 1cm;
+    margin: 18px;
+    padding-left: 37px;
+    padding-right: 37px;
     color: floralwhite;
 }
 
@@ -126,11 +124,11 @@ section {
     align-items: center;
     background-color: rgb(13, 6, 18);
     border-radius: 10px;
-    margin-top: 2cm;
-    padding-left: 1cm;
-    padding-right: 1cm;
-    padding-top: 1cm;
-    padding-bottom: 1cm;
+    margin-top: 74px;
+    padding-left: 37px;
+    padding-right: 37px;
+    padding-top: 37px;
+    padding-bottom: 37px;
     text-align:justify;
 }
 
@@ -138,10 +136,20 @@ section h2 {
     margin-bottom: 0px;
 }
 
+/*ajuste e alinhamento dos parágrafos*/
+section p {
+    font-size: larger;
+    padding-bottom: 37px;
+    padding-top: 37px;
+    padding-left: 111px;
+    padding-right: 111px;
+}
+
 .idiomas {
     display: flex;
     align-items: center; /* Alinhar verticalmente os elementos */
     justify-content: space-around;
+    font-size: larger;
 }
 
 .idiomas h3 {
@@ -154,36 +162,21 @@ section h2 {
 }
 
 .idiomas li {
-    margin-right: 10px; /* Adicionar margem entre os itens da lista */
+    font-size: larger;
+    font-weight: 300; /* Define o peso (gramatura) da fonte*/
+    margin-right: 10px;
+    padding: 5px;
 }
-
 
 .skils-list {
     display: flex;
+    margin-top: 37px;
+    padding-bottom: 45px;
+    flex-wrap: row wrap;
     justify-content: center;
-    /*flex-wrap: wrap;*/
-    list-style: none;
-    width: 50%; /* Isso fará com que duas li fiquem lado a lado */
-    padding: 10px;
-    box-sizing: border-box;
 }
-
-.skils-list li {
-    display: inline;
-    justify-content: space-around;
-    list-style: none;
-    padding-bottom: 1cm;
-    padding-top: 1cm;
-    padding-left: 1cm;
-    padding-right: 50px;
-    margin-right: 15px;
-}
-/*ícones na seção skils*/
-
-#icons i {
-    margin-left: 1cm; /* Espaçamento horizontal entre os ícones */
-    padding-right: 65px;
-    margin-bottom: 20px;
+.skils-list div{
+    padding-right: 74px;
 }
 
 #certificados {
@@ -195,15 +188,7 @@ a {
     margin: 5px;
     text-align: center;
     text-decoration: none;
-    margin-top: 1cm;
-}
-
-/*ajuste e alinhamento dos parágrafos*/
-section p {
-    padding-bottom: 1cm;
-    padding-top: 1cm;
-    padding-left: 3cm;
-    padding-right: 3cm;
+    margin-top: 37px;
 }
 /*estilização do conteúdo da main*/
 
@@ -211,7 +196,7 @@ section p {
 .container-flex {
     display: flex;
     flex-flow: row wrap ;
-    padding-top: 1cm;
+    padding-top: 37px;
 }
 
 /*inputs nome e email*/
@@ -276,7 +261,7 @@ form button:hover {
     background-color: black;
     display: grid;
     justify-content: center;
-    margin-top: 1cm;
+    margin-top: 37px;
 }
 
 ul{
@@ -295,7 +280,6 @@ li {
     justify-content: space-around;/* Adiciona um espaço entre os ícones*/
     list-style: none; /* Remove os marcadores de lista */
 }
-
 
 .autor {
     display: inline;
