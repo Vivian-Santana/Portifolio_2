@@ -3,7 +3,7 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    color:floralwhite;;
+    color:rgba(255, 250, 240, 0.918);;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -12,6 +12,12 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; /*fixa a imagem de fundo*/
+}
+
+#hover:hover{
+    text-decoration: underline;
+    transition: color 0.3s;
+    color: rgb(88, 21, 150);
 }
 /*estilização do conteúdo geral e do background*/
 
@@ -66,11 +72,6 @@ nav ul {
     font-weight: 700;
 }
 
-.container-menu li a:hover{
-    text-decoration: underline;
-    color: rgb(88, 21, 150);
-}
-
 nav li{
     display: inline; /* Faz com que os itens se comportem como elementos inline */
     margin-right: 100px;/* Adiciona um espaço entre os itens*/
@@ -85,7 +86,6 @@ nav li{
     padding: 10px;
     align-items: space-evenly;
 }
-
 
 /*estilização do conteúdo da main*/
 
@@ -117,10 +117,6 @@ nav li{
     padding-right: 1cm;
     color: floralwhite;
 }
-.welcome p a:hover {
-    text-decoration: underline;
-    color: rgb(88, 21, 150);
-}
 
 /*estilização das seções*/
 section {
@@ -135,17 +131,32 @@ section {
     padding-right: 1cm;
     padding-top: 1cm;
     padding-bottom: 1cm;
-    text-align: center;  
+    text-align:justify;
 }
 
 section h2 {
     margin-bottom: 0px;
 }
 
-.idiomas p{
-    display: inline;
-    margin-bottom: 10px;
+.idiomas {
+    display: flex;
+    align-items: center; /* Alinhar verticalmente os elementos */
+    justify-content: space-around;
 }
+
+.idiomas h3 {
+    margin-right: 30px; /* Adicionar margem à direita para separar do <ul> */
+}
+
+.idiomas ul {
+    list-style: none; /* Remover marcadores de lista padrão */
+    font-size:medium;
+}
+
+.idiomas li {
+    margin-right: 10px; /* Adicionar margem entre os itens da lista */
+}
+
 
 .skils-list {
     display: flex;
@@ -164,12 +175,14 @@ section h2 {
     padding-bottom: 1cm;
     padding-top: 1cm;
     padding-left: 1cm;
-    padding-right: 1cm;
+    padding-right: 50px;
     margin-right: 15px;
 }
+/*ícones na seção skils*/
+
 #icons i {
     margin-left: 1cm; /* Espaçamento horizontal entre os ícones */
-    padding-right: 55px;
+    padding-right: 65px;
     margin-bottom: 20px;
 }
 
@@ -182,10 +195,8 @@ a {
     margin: 5px;
     text-align: center;
     text-decoration: none;
-   /* padding: 5px; espaçamento entre as linhas*/
     margin-top: 1cm;
 }
-
 
 /*ajuste e alinhamento dos parágrafos*/
 section p {
@@ -194,22 +205,12 @@ section p {
     padding-left: 3cm;
     padding-right: 3cm;
 }
-
-#Certificados a:hover{
-    text-decoration: underline;
-    color: rgb(88, 21, 150);
-}
-
-#portifolio {
-   
-}
 /*estilização do conteúdo da main*/
 
 /*estilização do formulario*/
 .container-flex {
     display: flex;
     flex-flow: row wrap ;
-    justify-content: center;
     padding-top: 1cm;
 }
 
@@ -237,22 +238,24 @@ section p {
 }
 
 form button {
-    justify-content: center;
     background-color: rgb(30, 9, 49);
     color: #fff;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    margin-top: 20px; 
+    margin-top: 20px;
+    margin-left: 400px;
 }
 
+/*efeito no botão*/
 form button:hover {
     transform: translateY(-5px); /* o botão vai saltar 5px para cima quando o cursosr passar por ele*/
     transition: color 0.3s;
     color: rgb(122, 15, 223);
 }
 
+/*estilização do link de navegação*/
 .voltar {
     display: grid;
     display: inline;
@@ -261,11 +264,7 @@ form button:hover {
     padding-top: 30px;
 }
 
-.voltar a:hover {
-    transition: color 0.3s;
-    color: rgb(88, 21, 150);
-}
-
+/*hover do ícone setinha para cima*/
 .voltar i:hover {
     transition: color 0.3s;
     color: rgb(88, 21, 150);
@@ -319,7 +318,8 @@ li {
     justify-content: center;
     margin-left: 10px;
 }
-.redes-sociais a:hover{ /*colocar efeito nos icones quando passar o mouse*/
+/*hover nos ícones de redes sociais*/
+.redes-sociais a:hover{
     transition: color 0.3s;
     color: rgb(88, 21, 150);
 }
