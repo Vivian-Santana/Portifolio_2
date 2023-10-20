@@ -308,13 +308,3 @@ li {
     transition: color 0.3s;
     color: rgb(88, 21, 150);
 }
-/*estilização do footer*/
-
-/* media query para responsividade 
-@media only screen and (max-width: 992px) {
-
-    .flex-container{
-        display: flex;
-        flex-flow: column;
-    }
-}*/
