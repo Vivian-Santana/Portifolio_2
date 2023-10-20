@@ -13,12 +13,12 @@
 
 <body>
     <!--Itens do Menu com links para cada área da página-->
-    <nav class="container-menu"id="menu">
+    <nav class="flex-container"id="menu">
         <ul>
             <li><a href="#sobre" id="hover">Sobre mim</a></li>
             <li><a href="#formacao" id="hover">Formação</a></li>
             <li><a href="#certificados" id="hover">Certificados</a></li>
-            <li><a href="#skils" id="hover">Skils</a></li>
+            <li><a href="#hardSkills" id="hover">Hard Skills</a></li>
             <li><a href="#portifolio" id="hover">Portifólio</a></li>
             <li><a href="#contato" id="hover">Entre em contato</a></li>
         </ul>
@@ -32,23 +32,23 @@
         </div>
     </header>
 
-    <main>
+    <main class="main">
 
-        <div class="welcome">
+        <div class="flex-container" id="welcome">
             <img class="foto" src="img/IMG_20200901_220754230.jpg" alt="foto de Vivian">
                 
             <p>
                 Olá! Seja bem vindo(a)! Aqui você vai conhecer um pouco sobre mim e sobre a minha caminhada na área de desenvolvimento, 
-                 fique à vontade para entrar em contato pelas minhas redes sociais ou por meio do <a href="#contato" id="hover">formulário</a>.
+                 fique à vontade para entrar em contato pelas minhas redes sociais ou por meio do <a href="#contato">formulário</a>.
             </p>
 
         </div>
         
         <!--seção 1 com mais informações sobre mim-->
-        <section id="sobre">
+        <section class="flex-container" id="sobre">
             <h2>Sobre mim</h2>
             <p>
-                Sou paulistana, moro na região do ABC, meus hobbies são desenhar, ler e assistir filmes, séries ou documentários. Gosto de aprender coisas novas, sempre gostei de idiomas, estudo inglês autodidata desde criança e atualmente faço um curso, sei espanhol em nível básico. tenho formação técnica em costura e modelagem do vestuário atuei na área um bom tempo. A área de TI, especificamente desenvolvimento sempre me atraiu e no fim do ensino médio era uma das minhas opções, devido esse antigo interesse e a crescente necessidade de profissionais no mercado decidi aprender a programar e encarar o desafio de migrar de carreira. Tive o meu primeiro contato com programação num bootcamp onde aprendi lógica de programação web com java, sql, typeScrip e angular pude desenvolver um site em grupo usando ferramentas de colaboração e controle de versão, trello, Git e GitHub. Em seguida continuei o meu aprendizado com outros cursos livres e com conteúdo gratuito na internet, nesse meio tempo fiz estágio voluntário numa ong chamada Cactos que prepara alunos de escolas públicas para olimpíadas escolares, atuei na área de dados, lidava com análise e manipulação de dados no Excel, levantava informações em dashboards e relatórios para serem apresentados em reuniões semanais. Atualmente curso Análise e Desenvolvimento de Sistemas.
+                Sou paulistana, moro na região do ABC, meus hobbies são desenhar, ler e assistir filmes, séries ou documentários. Gosto de aprender coisas novas, sempre gostei de idiomas, estudo inglês autodidata desde criança atualmente faço um curso e sei um pouco de espanhol. Tenho formação técnica em costura e modelagem do vestuário atuei na área um bom tempo. A área de TI, especialmente desenvolvimento sempre me atraiu e no fim do ensino médio era uma das minhas opções, devido esse antigo interesse e a crescente necessidade de profissionais no mercado decidi aprender a programar e encarar o desafio de migrar de carreira. Tive o meu primeiro contato com programação num bootcamp onde aprendi lógica de programação web com java, sql, typeScrip e angular pude desenvolver um site em grupo usando ferramentas de colaboração e controle de versão: trello, Git e GitHub. Em seguida continuei o meu aprendizado com outros cursos livres e com conteúdo gratuito na internet, nesse meio tempo fiz estágio voluntário numa ong chamada Cactos que prepara alunos de escolas públicas para olimpíadas escolares, atuei na área de dados, lidava com análise e manipulação de dados no Excel, levantava informações em dashboards e relatórios para serem apresentados em reuniões semanais. Atualmente curso Análise e Desenvolvimento de Sistemas.
             </p>
 
             <!--link para voltar para o menu-->
@@ -59,7 +59,7 @@
         </section>
 
         <!--seção 2 com informações sobre minha formação-->
-        <section id="formacao">
+        <section class="flex-container" id="formacao">
             <h2>
                 Formação
             </h2>
@@ -86,12 +86,12 @@
             seção 3 com iformações sobre habilidades técnicas
             organização dos textos alinhados com os ícones
         -->
-        <section id="skils">
+        <section class="flex-container" id="hardSkills">
             <h2>
-                Skils
+                Hard Skills
             </h2>
 
-            <div class="skils-list">
+            <div class="hardSkills-list">
                 
                 <div>
                     <h3>Java</h3>
@@ -151,7 +151,7 @@
         </section>
 
         <!--seção 4 com links para acessar os certificados de cursos livres que eu fiz-->
-        <section id="certificados">
+        <section class="flex-container" id="certificados">
             <h2>
                 Certificados
             </h2>
@@ -178,7 +178,7 @@
             seção 5 link para o meu repositório no github
             incorporado tanto na foto como na frase visite...
         -->
-        <section id="portifolio">
+        <section class="flex-container" id="portifolio">
             <h2>Portifólio</h2>
             <a href="https://github.com/Vivian-Santana" target="_blank" id="hover">Visite o meu perfil no GitHub</a>
                <!-- <a class= "fa-brands fa-square-github fa-4x" target="_blank" href="https://github.com/Vivian-Santana"></a>-->
@@ -198,19 +198,19 @@
             e-mail e assunto
         -->
   
-        <section id="contato">
+        <section class="flex-container" id="contato">
                 <h2>Entre em contato</h2>
 
             <form action="">
                 <div class="container-flex">
                     <div class="input-group">
-                        <input type="text" size="50" placeholder="Nome" id="nome-contato">
-                        <input type="email" size="50" placeholder="e-mail"> 
+                        <input type="text" size="50" placeholder="Nome" id="nome">
+                        <input type="email" size="50" placeholder="e-mail" id="email"> 
                     </div>
-                        <input id="assunto" size="50" type="text" size="50" placeholder="Assunto">
+                        <textarea id="mensagem"rows="4" cols="50" placeholder="Digite sua mensagem aqui"></textarea>
                 </div>
                     
-                <button>Enviar</button>
+                <button id="enviar" type="submit">Enviar</button>
                     
             </form>
 
@@ -223,7 +223,7 @@
         </section>
 
         <!--rodapé da página com ícones lincados às minhas redes sociais-->
-        <div class="footer">
+        <div class="flex-container" id="footer">
             <ul class="redes-sociais">
                 <li>
                     <a class= "fa-brands fa-square-github fa-2x" target="_blank" href="https://github.com/Vivian-Santana"></a>
@@ -244,4 +244,5 @@
 
     </main>
 </body>
+        <script src="/alert.js"></script>
 </html>
