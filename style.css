@@ -2,56 +2,25 @@
  *{
     padding: 0%;
     margin: 0%;
-    box-sizing: border-box;
-    color:rgba(255, 250, 240, 0.918);;
+    color:rgba(255, 250, 240, 0.918); /*cor e estilo da fonte da página*/
     font-family: 'Open Sans', sans-serif;
 }
 
 body {
     background-image:url(/img/fundo-cosmico-com-luzes-laser-de-neon-coloridas-perfeito-para-um-papel-de-parede-digital_181624-23743.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: cover;/*faz a imagem cobrir o fundo todo*/
+    background-repeat: no-repeat;/*sem repetir a imagem*/
     background-attachment: fixed; /*fixa a imagem de fundo*/
 }
 
+/*coloca efeito de hover, underline e muda a cor do texto para todos os elementos que tiverem o id="hover"*/
 #hover:hover{
     text-decoration: underline;
     transition: color 0.3s;
     color: rgb(88, 21, 150);
 }
-/*estilização do conteúdo geral e do background*/
 
-/* estilização do header*/
-header {
-    display: flex;
-    justify-content: space-around; 
-    align-items: center;
-    padding: 10px;
-}
-
-header ul {
-    display: flex;
-}
-
-header ul li{
-    padding: 10px;
-}
-
-.container-cabecalho h1 {
-    display: flex;
-    justify-content:center;
-    font-size: 40px;
-    margin-left: 10px;
-    margin-top: 30px;
-}
-
-.container-cabecalho h5 {
-    display: flex;
-    justify-content:center;
-    font-size: 25px;
-}
-
-/* menu */
+/*estilização do menu, cor de fundo e alinhamento*/
 nav {
     background-color: rgb(0, 0, 0);
     display: flex;
@@ -64,9 +33,9 @@ nav {
 }
 
 nav ul {
-    list-style: none;
-    font-size: 20px;
-    font-style: italic;
+    list-style: none; /*remove os marcadores da lista*/
+    font-size: 20px; /*tamanho da fonte*/
+    font-style: italic; /*fonte em itálico*/
     font-weight: 700; /* Define o peso (gramatura) da fonte*/
 }
 
@@ -75,10 +44,32 @@ nav li{
     margin-right: 100px;/* Adiciona um espaço entre os itens*/
     list-style: none; /* Remove os marcadores de lista */
 }
-/* estilização do header*/
+
+/* estilização do cabeçalho**/
+header {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    padding: 12px;
+}
+
+header h1 {
+    display: flex;
+    justify-content:center;
+    font-size: 40px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+header h5 {
+    display: flex;
+    justify-content:center;
+    font-size: 25px;
+}
 
 /*estilização do conteúdo da main*/
 
+/*centralização e estilização da apresentação breve*/
 #welcome {
     display: flex;
     justify-content: center;
@@ -93,12 +84,14 @@ nav li{
     text-align:justify;
 }
 
+/*estilização da foto e ajuste de tamanho*/
 .foto {
     width: 150px;
     border-radius: 10px;
     margin-left: 18px;
 }
 
+/*estilização do parágrafo de apresentação*/
 #welcome p {
     font-size: larger;
     max-width: 600px;
@@ -107,29 +100,22 @@ nav li{
     padding-right: 37px;
     color: floralwhite;
 }
+/*underline e cor fixa na palavra/link formulario*/
 #welcome a{
     text-decoration: underline;
     color: rgb(88, 21, 150);
 }
 
-/*estilização das seções*/
+/*estilização das seções e seus títulos e parágrafos*/
 section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: rgb(13, 6, 18);
-    border-radius: 10px;
     margin-top: 74px;
-    padding-left: 37px;
-    padding-right: 37px;
-    padding-top: 37px;
-    padding-bottom: 37px;
+    padding: 37px;
     text-align:justify;
-}
-
-section h2 {
-    margin-bottom: 0px;
+    width: 100%; /* Define a largura como 100% da janela de visualização */
 }
 
 /*ajuste e alinhamento dos parágrafos*/
@@ -144,49 +130,48 @@ section p {
 .idiomas {
     display: flex;
     align-items: center; /* Alinha verticalmente os elementos */
-    justify-content: space-around;
-    font-size: larger;
+    justify-content: space-around; /*dá um espaço ao redor dos elementos*/
+    font-size: larger; /*tamanho da fonte*/
 }
 
 .idiomas h3 {
-    margin-right: 30px; /* Adiciona margem à direita para separar do <ul> */
+    margin-right: 30px; /* Adiciona margem à direita para separar da <ul> */
 }
 
 .idiomas ul {
-    list-style: none; /* Remove marcadores de lista padrão */
+    list-style: none; /* Remove marcadores de lista */
     font-size:medium;
 }
 
 .idiomas li {
     font-size: larger;
     font-weight: 300; /* Define o peso (gramatura) da fonte*/
-    margin-right: 10px;
+    margin-right: 10px; /*da uma margem a direita*/
     padding: 5px;
 }
 
-.hardSkills-list {
+.hardSkills-list { /*ajustes das margens, espaçamentos e centralização da lista de habilidades*/
     display: flex;
     margin-top: 37px;
     padding-bottom: 45px;
-    flex-wrap: row wrap;
     justify-content: center;
 }
 .hardSkills-list div{
     padding-right: 74px;
 }
 
-#certificados {
+#certificados { /*ajustes das margens, espaçamentos e centralização da lista de certificados*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-a {
+
+a { /*estilo dos links da página*/
     margin: 5px;
     text-align: center;
     text-decoration: none;
     margin-top: 37px;
 }
-/*estilização do conteúdo da main*/
 
 /*estilização do formulario*/
 .container-flex {
@@ -195,7 +180,7 @@ a {
     padding-top: 37px;
 }
 
-/*inputs nome e email*/
+/*inputs nome e email alinhados em coluna*/
 .input-group {
     display: flex;
     flex-flow: column;
@@ -203,6 +188,7 @@ a {
     padding-right: 20px;
 }
 
+/*tamanho dos inputs borda aredondade e cor no texto digitado*/
 .input-group input {
     width: 380px; 
     height: 45px;
@@ -210,19 +196,20 @@ a {
     color: black;
 }
 
-/*inputs assunto*/
+/*inputs assunto tamanho cor e borda*/
 #mensagem {
     width: 500px;
     height: 110px;
     border-radius: 5px;
     color: black;
-    word-wrap: break-word;
+    word-wrap: break-word; /*quebra o texto quando escrito*/
 }
 
 .form button {
     width: 380px;
 }
 
+/*estilização do botão de enviar*/
 form button {
     background-color: rgb(30, 9, 49);
     color: #fff;
@@ -234,10 +221,10 @@ form button {
     margin-left: 400px;
 }
 
-/*efeito no botão*/
+/*efeitos no botão*/
 form button:hover {
     transform: translateY(-5px); /* o botão vai saltar 5px para cima quando o cursosr passar por ele*/
-    transition: color 0.3s;
+    transition: color 0.3s; /*faz a tansição suave para cor roxa*/
     color: rgb(122, 15, 223);
 }
 
@@ -263,6 +250,7 @@ form button:hover {
     display: grid;
     justify-content: center;
     margin-top: 37px;
+    width: 105%;
 }
 
 ul{
