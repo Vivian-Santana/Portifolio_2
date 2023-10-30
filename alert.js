@@ -1,4 +1,4 @@
-/*lerta de feedback para o usuário, exibe um alert "Mensagem enviada com sucesso!" 
+/*alerta de feedback para o usuário, exibe um alert "Mensagem enviada com sucesso!" 
 depois do botão de enviar ser acionado.*/
 
 // pega o botão pelo id enviar
